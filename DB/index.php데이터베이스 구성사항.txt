@@ -1,0 +1,9 @@
+https://www.apachefriends.org/download.html
+xampp 8.0.3.0 설치
+
+
+데이터베이스명 wms  ($database)
+테이블명 wms           ('//테이블명 확인' 2곳 주석표시)
+
+사용자명 root
+패스워드 없음

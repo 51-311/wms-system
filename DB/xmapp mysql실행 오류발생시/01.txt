@@ -1,0 +1,5 @@
+https://velog.io/@kitechoi/XAMPP-MySQL-shutdown-unexpectedly-%EC%97%90%EB%9F%AC-%ED%95%B4%EA%B2%B0
+
+
+xampp/mysql에서 backup 폴더 안에 있는 내용을 복사하고 data폴더에 덮어쓴다.
+xampp재시작
