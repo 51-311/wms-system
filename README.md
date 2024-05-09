@@ -1,7 +1,5 @@
 ## _WMS 창고재고관리 시스템_
 
-<br/>
-
 ## 기록
 ### 2024-05-02
 프론트/백엔드 깃허브 저장소 생성, 참여자:<br/>
@@ -17,12 +15,16 @@
 - [DB연결 파일 생성](https://github.com/51-311/wms-system/tree/main/DB) - xampp를 사용하여 mysql을 구축하고 연결 테스트
 
 <br/>
-<br/>
 
 ### 2024-05-06
 - [WMS 페이지 메뉴생성](https://github.com/51-311/wms-system/commit/67587354a2d3c2302e6c17ccf2b86dfc998e8ac3)
 
 <br/>
+
+### 2024-05-09
+- [페이지 일부 수정 및 기능추가](https://github.com/51-311/wms-system/commit/75a795ef045044e97c7b925dca3452dd726cc79e)
+기존 style1,2 css통합 및 테이블 생성 조회 데이터 출력등 기능 추가, css충돌로인하여 기능 디자인부분만 Tailwind 라이브러리 사용
+
 <br/>
 
 ## XAMPP Install
