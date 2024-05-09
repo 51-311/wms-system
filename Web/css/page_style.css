@@ -1,0 +1,86 @@
+
+
+nav {
+  font-size: 12pt; /* 네비게이션 바의 텍스트 크기를 12pt로 설정합니다. */
+  font-family: 'PT Sans', Arial, Sans-serif; /* 네비게이션 바의 폰트를 'PT Sans', Arial, Sans-serif 순서로 설정합니다. */
+  position: relative; /* 네비게이션 바의 위치를 상대적으로 설정합니다. */
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto; /* 수평 가운데 정렬을 해제하고 */
+  width: auto;
+  text-align: left; /* 왼쪽 정렬로 변경합니다. */
+}
+
+nav a {
+  line-height: 50px; /* 네비게이션 바의 링크(a)의 줄 높이(line-height)를 50px로 설정하여 세로 가운데 정렬합니다. */
+  height: 50px; /* 네비게이션 바의 링크(a)의 높이를 50px로 설정합니다. */
+}
+
+nav li a {
+  box-sizing: border-box; /* 네비게이션 바의 링크(a)의 크기를 border-box 모델로 설정하여 내부 여백과 테두리를 포함한 크기로 지정합니다. */
+  -moz-box-sizing: border-box; /* Firefox 브라우저를 위한 box-sizing 속성 설정 */
+  -webkit-box-sizing: border-box; /* WebKit 기반 브라우저를 위한 box-sizing 속성 설정 */
+}
+
+nav li:last-child a {
+  border-right: 0; /* 네비게이션 바의 마지막 링크(a)의 오른쪽 테두리를 제거합니다. */
+}
+
+html {
+  -webkit-touch-callout: none; /* iOS Safari에서 길게 눌러서 텍스트 선택하는 기능을 비활성화합니다. */
+  -webkit-user-select: none; /* 웹킷 기반 브라우저에서 텍스트 선택을 비활성화합니다. */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iOS Safari에서 링크를 탭할 때 나타나는 하이라이트 효과를 비활성화합니다. */
+}
+
+ul {
+  margin: 0; /* 목록(ul)의 바깥쪽 여백을 0으로 설정합니다. */
+  padding: 0; /* 목록(ul)의 안쪽 여백을 0으로 설정합니다. */
+  background-color: white; /* 목록(ul)의 배경색을 흰색으로 설정합니다. */
+  text-align: center; /* 목록(ul)의 텍스트를 가운데 정렬합니다. */
+}
+
+li {
+  display: inline-block; /* 목록 항목(li)을 가로로 나열하며, inline-block 요소로 설정합니다. */
+}
+
+li a {
+  color: #8e8e8e; /* 링크(a)의 기본 텍스트 색상을 회색(#8e8e8e)으로 설정합니다. */
+  text-align: center; /* 링크(a)의 텍스트를 가운데 정렬합니다. */
+  padding: 14.5px 16px; /* 링크(a)의 내부 여백을 위아래로 14.5px, 좌우로 16px로 설정합니다. */
+  text-decoration: none; /* 링크(a)의 밑줄을 제거합니다. */
+}
+
+li a:hover {
+  color: black; /* 링크(a)에 마우스를 올렸을 때의 텍스트 색상을 검정색으로 변경합니다. */
+  font-weight: normal; /* 링크(a)에 마우스를 올렸을 때의 글꼴 두껍기를 원래 상태로 변경합니다. */
+}
+
+.menu {
+  width: 5000px; /* 메뉴의 너비를 5000px로 설정합니다. */
+  height: 50px; /* 메뉴의 높이를 50px로 설정합니다. */
+  text-align: center; /* 메뉴의 텍스트를 가운데 정렬합니다. */
+  max-width: 100%; /* 메뉴의 최대 너비를 화면 너비와 동일하게 설정합니다. */
+  background-position: center; /* 배경 이미지를 가운데 정렬합니다. */
+  background-size: cover; /* 배경 이미지를 화면에 꽉 채우도록 설정합니다. */
+  background-color: #333333; /* 메뉴의 배경색을 진한 회색(#333333)으로 설정합니다. */
+  color: white; /* 메뉴의 텍스트 색상을 흰색으로 설정합니다. */
+  position: absolute; /* 메뉴의 위치를 절대적으로 설정합니다. */
+  z-index: 1; /* 메뉴의 층 순서를 설정합니다. */
+}
+
+#logo a {
+  color: black; /* 텍스트 색상을 검정색으로 설정합니다. */
+  font-size: 20px; /* 글자 크기를 20px로 설정합니다. */
+}
+
+#logo a:hover {
+  /* hover 효과 스타일 제거 */
+}
+
+.mainapp{
+  background-color: #dad7d7;
+  width: 100vw; /* 화면의 너비를 100%로 설정합니다. */
+  height: 100vh; /* 화면의 높이를 100%로 설정합니다. */
+}
