@@ -19,6 +19,12 @@
 <br/>
 <br/>
 
+### 2024-05-06
+- [WMS 페이지 메뉴생성](https://github.com/51-311/wms-system/commit/67587354a2d3c2302e6c17ccf2b86dfc998e8ac3)
+
+<br/>
+<br/>
+
 ## XAMPP Install
 xampp 홈페이지([링크](https://www.apachefriends.org/download.html)) 에서 8.0.30 download<br/>
 <br/>
