@@ -5,26 +5,79 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link rel="stylesheet" href="css/page_style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
 
 <div class="menu" >
 
-  <nav class="clearfix">
-    <ul class="clearfix">
-      <li id="logo"><a>WMS Website</a></li> <!--""<-여기 부분에 URL 작성하면 됨-->
-      <li><a href="./재고조회.html">재고조회 페이지</a></li>
-      <li><a href="./회원페이지.html">회원페이지</a></li>
-      <li><a href="./관리자페이지.html" style="color: black">관리자페이지</a></li>
-    </ul>
-    <a id="pull" href="#"></a>
-  </nav>
-</div>
-<div class="mainapp">
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="#" class="text-lg font-medium text-gray-900">WMS Website</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <!-- Assuming the names of the pages from the previous output -->
+                        <a href="./재고조회" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">재고조회 페이지</a>
+                        <a href="./회원페이지.html" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">회원페이지</a>
+                        <a href="./관리자페이지.html" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">관리자페이지</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <main class="my-8">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white p-6 shadow sm:rounded-lg">
+                <h2 class="text-lg leading-6 font-medium text-gray-900">관리자 정보</h2>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Manager Info List -->
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="text-md leading-6 font-medium text-gray-900 mb-4">관리자 정보</h3>
+                        <!-- Placeholder for manager info list -->
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center p-3 bg-white rounded-md shadow">
+                                <span>사번: 001</span>
+                                <span>이름: 홍길동</span>
+                                <span>직함: 관리자</span>
+                                <span>권한: 전체</span>
+                                <button class="ml-4 py-1 px-3 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">수정</button>
+                            </li>
+                            <!-- More items can be added here -->
+                        </ul>
+                    </div>
+                    <!-- Warehouse Space Info -->
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="text-md leading-6 font-medium text-gray-900 mb-4">창고 공간정보</h3>
+                        <!-- Placeholder for warehouse space info -->
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center p-3 bg-white rounded-md shadow">
+                                <span>구역번호: A1</span>
+                                <span>입/출고 신청여부: 가능</span>
+                                <span>창고 빈 공간여부: 있음</span>
+                            </li>
+                            <!-- More items can be added here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                  
+
+  
 </div>
+
+
+
 </body>
 
 </html>

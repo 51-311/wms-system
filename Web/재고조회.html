@@ -6,25 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/page_style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-<div class="menu" >
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-lg font-medium text-gray-900">WMS Website</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <!-- Assuming the names of the pages from the previous output -->
+                    <a href="./재고조회" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">재고조회 페이지</a>
+                    <a href="./회원페이지.html" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">회원페이지</a>
+                    <a href="./관리자페이지.html" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">관리자 페이지</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
-  <nav class="clearfix">
-    <ul class="clearfix">
-      <li id="logo"><a>WMS Website</a></li> <!--""<-여기 부분에 URL 작성하면 됨-->
-      <li><a href="./재고조회.html" style="color: black">재고조회 페이지</a></li>
-      <li><a href="./회원페이지.html">회원페이지</a></li>
-      <li><a href="./관리자페이지.html">관리자페이지</a></li>
-    </ul>
-    <a id="pull" href="#"></a>
-  </nav>
-</div>
-<div class="mainapp">
+<!-- <div class="mainapp">
 
-</div>
+</div> -->
+
+
+    
+                    
+
+  <main class="my-8">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    
+          <div class="flex justify-end">
+                    <div class="flex space-x-2"> <!--버튼 일렬정렬-->
+                  <input type="text" placeholder="검색" id="search-box" class="px-4 py-2 border rounded-md">
+                  <button class="w-20 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600;">검색</button>
+              </div>
+          </div>
+          <div class="flex flex-col mt-8">
+              <div class="align-middle min-w-full overflow-x-auto shadow overflow-hidden sm:rounded-lg">
+                  <table id="table" class="min-w-full divide-y divide-gray-200">
+                      <thead class="bg-gray-50">
+                          <tr>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">품목코드</th>
+
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">상품명</th>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">수량</th>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">적재위치</th>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">등록일</th>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">입고 요청</th>
+                              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">출고 요청</th>
+                          </tr>
+
+                          </tr>
+                      </thead>
+                      <tbody class="bg-white divide-y divide-gray-200" id="tableBody"> <!---테일윈드 스타일 클래스-->
+            <!--테이블 내용 삽입-->
+          </tbody>
+                  </table>
+              </div>
+          </div>
+
+          <!--이전 다음 버튼-->
+     
+          <div id="pagination">
+            <div class="inline-flex mt-2 xs:mt-0">
+              <!-- Buttons -->
+              <button onclick="changePage(-1)" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 rounded-s hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                  <svg class="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                  </svg>
+                  이전
+              </button>
+              <span id="page-number" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"></span><span class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">/</span> <span id="total-pages" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"></span>
+              <button onclick="changePage(1)" class="flex items-center justify-center px-3 h-8 text-sm font-medium text-white bg-gray-800 border-0 border-s border-gray-700 rounded-e hover:bg-gray-900 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                  다음
+                  <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+
+      </div>
+
+  </main>
+
+<script src="table.js"></script>  <!--테이블 페이지 컨트롤-->
+<script src="autowrite_table.js"></script> <!--테이블 데이터 삽입-->
 </body>
 
 </html>

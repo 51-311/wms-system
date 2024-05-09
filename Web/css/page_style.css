@@ -83,4 +83,58 @@ li a:hover {
   background-color: #dad7d7;
   width: 100vw; /* 화면의 너비를 100%로 설정합니다. */
   height: 100vh; /* 화면의 높이를 100%로 설정합니다. */
+  position: fixed;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.loginheight{
+  height: 50px;
+}
+
+
+.login {
+  width: 80%;
+  background-color: #EEEFF1;
+  text-align: center;
+  padding: 30px;
+  margin: 10% auto; /* 수직 가운데 정렬, 수평 가운데 정렬 */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+.in {
+  margin-bottom: 10px;
+}
+
+#btn {
+  background-color: #201bbc;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#forget a {
+  text-decoration: none;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+#join{
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  color: #000000;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
 }
