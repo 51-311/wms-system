@@ -22,8 +22,7 @@
 <br/>
 
 ### 2024-05-09
-- [페이지 일부 수정 및 기능추가](https://github.com/51-311/wms-system/commit/75a795ef045044e97c7b925dca3452dd726cc79e)
-기존 style1,2 css통합 및 테이블 생성 조회 데이터 출력등 기능 추가, css충돌로인하여 기능 디자인부분만 Tailwind 라이브러리 사용
+- [페이지 일부 수정 및 기능추가](https://github.com/51-311/wms-system/commit/75a795ef045044e97c7b925dca3452dd726cc79e) - 기존 style1,2 css통합 및 테이블 생성 조회 데이터 출력등 기능 추가, css충돌로인하여 기능 디자인부분만 Tailwind 라이브러리 사용
 
 <br/>
 
