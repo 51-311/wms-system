@@ -1,5 +1,5 @@
 ## _WMS 창고재고관리 시스템_
-주소:https://51-311.github.io/wms-system/Web/%EC%9E%AC%EA%B3%A0%EC%A1%B0%ED%9A%8C.html
+주소: [링크](https://51-311.github.io/wms-system/Web/%EC%9E%AC%EA%B3%A0%EC%A1%B0%ED%9A%8C.html)
 
 ## 기록
 ### 2024-05-02
