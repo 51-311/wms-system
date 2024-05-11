@@ -1,0 +1,37 @@
+.login {
+  width: 100%;
+  text-align: center;
+  padding: 10%;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
+
+.in {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#btn {
+  background-color: #201bbc;
+  margin-bottom: 30px;
+  color: white;
+  padding: 10px;
+}
+
+
+
+#join{
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  color: #000000;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+}
