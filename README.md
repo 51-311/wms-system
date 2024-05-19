@@ -30,7 +30,7 @@ WMS 창고재고관리 시스템([바로가기](https://51-311.github.io/wms-sys
 <br/>
 
 ### 데이터베이스 웹페이지 연동
-- **2024-05-20**: [DB데이터 출력](https://github.com/51-311/wms-system/commit/67587354a2d3c2302e6c17ccf2b86dfc998e8ac3) - 데이터베이스에 입력된 데이터를 JSON형태로 전환하여 웹페이지의 상품재고조회 테이블에 출력하도록 PHP로 처리하였습니다. 이 과정에서 autowirte_tablejs와 table.js파일을 write_pages.js로 통합하였습니다.
+- **2024-05-20**: [DB데이터 출력](https://github.com/51-311/wms-system/tree/main/Web/js) - 데이터베이스에 입력된 데이터를 JSON형태로 전환하여 웹페이지의 상품재고조회 테이블에 출력하도록 PHP로 처리하였습니다. 이 과정에서 autowirte_tablejs와 table.js파일을 write_pages.js로 통합하였습니다.
 
 
 <br/>
