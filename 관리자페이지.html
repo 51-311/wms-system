@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .which{
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        input {
+            font-size: 15px;
+            color: #222222;
+            width: 300px;
+            border: none;
+            border-bottom: solid #aaaaaa 1px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            position: relative;
+            background: none;
+            z-index: 5;
+        }
+
+        input::placeholder { color: #aaaaaa; }
+        input:focus { outline: none; }
+
+        .container2 {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0%;  /* right로만 바꿔주면 오 - 왼 */
+            background-color: #666;
+            width: 0;
+            height: 2px;
+            border-radius: 2px;
+            transition: 0.5s;
+        }
+
+        label {
+            position: absolute;
+            color: #aaa;
+            left: 10px;
+            font-size: 20px;
+            bottom: 8px;
+            transition: all .2s;
+        }
+
+        input:focus ~ label, input:valid ~ label {
+            font-size: 16px;
+            bottom: 40px;
+            color: #666;
+            font-weight: bold;
+        }
+
+        input:focus ~ span, input:valid ~ span {
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            showContent('A');
+        });
+
+        function showContent(content){
+            var a = document.getElementById("item_code");
+            var b = document.getElementById("item_date");
+            var c = document.getElementById("item_name");
+            var d = document.getElementById("item_count");
+            var e = document.getElementById("item_which");
+            var f = document.getElementById("item_request");
+            var g = document.getElementById("item_response");
+            var h = document.getElementById("item_register");
+
+            a.style.display = "none";
+            b.style.display = "none";
+            c.style.display = "none";
+            d.style.display = "none";
+            e.style.display = "none";
+            f.style.display = "none";
+            g.style.display = "none";
+            h.style.display = "none";
+
+            if (content === "show"){
+                a.style.display = "block";
+                b.style.display = "block";
+                c.style.display = "block";
+                d.style.display = "block";
+                e.style.display = "block";
+                f.style.display = "block";
+                g.style.display = "block";
+                h.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-gray-100">
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-lg font-medium text-gray-900">WMS Website</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <!-- Assuming the names of the pages from the previous output -->
+                    <a href="./재고조회.html" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">재고조회 페이지</a>
+                    <a href="./회원페이지.html" class="text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">회원페이지</a>
+                    <a href="./관리자페이지.html" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">관리자페이지</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="my-8">
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="bg-white p-6 shadow sm:rounded-lg">
+            <h2 class="text-lg leading-6 font-medium text-gray-900">관리자 정보</h2>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Manager Info List -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h3 class="text-md leading-6 font-medium text-gray-900 mb-4">관리자 정보</h3>
+                    <!-- Placeholder for manager info list -->
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center p-3 bg-white rounded-md shadow">
+                            <span>사번: 001</span>
+                            <span>이름: 홍길동</span>
+                            <span>직함: 관리자</span>
+                            <span>권한: 전체</span>
+                            <button class="ml-4 py-1 px-3 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">수정</button>
+                        </li>
+                        <!-- More items can be added here -->
+                    </ul>
+                </div>
+                <!-- Warehouse Space Info -->
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h3 class="text-md leading-6 font-medium text-gray-900 mb-4">창고 공간정보</h3>
+                    <!-- Placeholder for warehouse space info -->
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center p-3 bg-white rounded-md shadow">
+                            <span>구역번호: A1</span>
+                            <span>입/출고 신청여부: 가능</span>
+                            <span>창고 빈 공간여부: 있음</span>
+                        </li>
+                            <li class="flex justify-between items-center p-3 bg-white rounded-md shadow">
+                                <span>구역번호: B1</span>
+                                <span>입/출고 신청여부: 가능</span>
+                                <span>창고 빈 공간여부: 있음</span>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--신규물품 등록-->
+        <form action="관리자페이지.html" method="post">
+            <input type="button" onclick="showContent('show')" value="상품등록">
+
+                <div class="container" id="item_code">
+                    <input type="text" required>
+                    <label>품목코드</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container"  id="item_name">
+                    <input type="text" required>
+                    <label>상품이름</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container" id="item_count">
+                    <input type="text" required>
+                    <label>남은수량</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container" id="item_which">
+                    A1<input type="radio" required name="which" class="which"><br>
+                    B1<input type="radio" required name="which" class="which">
+                    <label>적재위치</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container" id="item_date">
+                    <input type="text" required>
+                    <label>등록날짜</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container" id="item_request">
+                    <input type="text" required>
+                    <label>입고요청</label>
+                    <span class="container2"></span>
+                </div>
+
+                <div class="container" id="item_response">
+                    <input type="text" required>
+                    <label>출고요청</label>
+                    <span class="container2"></span>
+                </div>
+
+            <input type="submit" value="등록" id="item_register">
+        </form>
+
+    </div>
+
+
+</main>
+
+
+</body>
+
+</html>
