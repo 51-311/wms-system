@@ -26,6 +26,7 @@ WMS 창고재고관리 시스템([바로가기](https://51-311.github.io/wms-sys
 ### 인터페이스 개발
 - **2024-05-06**: [WMS 페이지 메뉴 생성](https://github.com/51-311/wms-system/commit/67587354a2d3c2302e6c17ccf2b86dfc998e8ac3)
 - **2024-05-09**: [페이지 일부 수정 및 기능 추가](https://github.com/51-311/wms-system/commit/75a795ef045044e97c7b925dca3452dd726cc79e) - 기존의 CSS 파일을 통합하고, Tailwind CSS를 활용하여 디자인을 개선했습니다. 또한 데이터 조회 기능을 추가하여 사용자 경험을 개선했습니다.
+- **2024-05-23**: [DB상품 등록페이지 추가](https://github.com/51-311/wms-system/commit/500afbb754d665a73fb6c0fdaa56d51ceeaa235a#diff-64572de8dca4ee36fd04498b43ed67510e3d169cbd3ec8f7f7685e0d60ba5033) - 상품등록 페이지를 추가하여 항목에 맞는 컬럼값을 입력후 DB에 상품을 추가하도록 페이지를 만들었습니다.
 
 <br/>
 
