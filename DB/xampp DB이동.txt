@@ -1,0 +1,5 @@
+xampp/mysql/data 폴더에 아래 파일 붙여넣기 
+----
+ib_logfile 0~1 (2개)
+ibdata
+wms폴더
